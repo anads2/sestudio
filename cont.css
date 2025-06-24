@@ -265,3 +265,28 @@ body {
 .formulario button[type="submit"]:hover {
     background-color: #7b5318; /* Cor de hover consistente */
 }
+
+.main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
+    font-size: 0.9em;
+    flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920;
+}
+
+.main-footer .social-links a i {
+    margin-right: 5px;
+}
