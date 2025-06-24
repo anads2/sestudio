@@ -1,0 +1,267 @@
+* {
+margin: 0; 
+padding: 0; 
+box-sizing: border-box;
+}
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #ded6c8;
+}
+
+header{
+background-color: #ded6c8; 
+padding: 20px 0; 
+border-bottom: 1px solid #000000;
+}
+
+.sal{ 
+     width: 90%;
+     max-width: 1200px;
+margin: auto; 
+display: flex; 
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+font-size: 24px; 
+color: #000000;
+}
+
+nav ul{
+list-style: none; 
+display: flex;
+gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+color: #000000;
+font-weight: bold; 
+}
+
+.im{
+background-color: #000000; 
+text-align: center;
+}
+
+.imgj{
+max-width: 400px; 
+display: block; 
+margin: auto;
+}
+
+.est{
+text-align: center;
+padding: 40px 20px; 
+background-color: #ded6c8;
+}
+
+.est h2{ 
+font-size: 36px; 
+margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #bd9965;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  color: #172531;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  background-color: #bd9965;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #2c4657;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #172531;
+}
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Gerais do Corpo (Aplica as fontes) --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f3ed; /* Fundo consistente */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Header Principal (CONSISTENTE COM AS OUTRAS PÁGINAS) --- */
+.main-header {
+    background-color: #ded6c8;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif; /* Fonte consistente */
+    font-size: 2em;
+    color: #5d4a3e; /* Cor consistente */
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5d4a3e; /* Cor consistente */
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transição para a linha */
+}
+
+.main-nav a:hover {
+    color: #9f6920; /* Cor de hover consistente */
+    border-bottom: 2px solid #9f6920; /* A linha de hover consistente */
+}
+
+/* --- Rodapé (CONSISTENTE COM AS OUTRAS PÁGINAS) --- */
+.main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
+    font-size: 0.9em;
+}
+
+.main-footer .social-links {
+    margin-top: 10px; /* Espaço entre o texto de copyright e os links sociais */
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920; /* Cor de hover consistente */
+}
+
+.main-footer .social-links a i { /* Estilo para os ícones sociais */
+    margin-right: 5px;
+}
+
+/* --- Responsividade BÁSICA para Header e Footer (CONSISTENTE) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        font-size: 1.8em;
+    }
+}
+
+/* IMPORTANTE: SEUS ESTILOS ORIGINAIS PARA O CONTEÚDO DE CONTATO DEVEM SER COLOCADOS AQUI ABAIXO */
+/* Eles NÃO foram alterados ou removidos neste código fornecido. */
+
+/* Exemplo de como você pode aplicar as novas fontes e cores a elementos existentes: */
+.contato h2, .contato h3 {
+    font-family: 'Playfair Display', serif; /* Aplicando a nova fonte aos títulos de contato */
+    color: #000000; /* Cor consistente */
+}
+
+.contato p, .contato input, .contato textarea, .contato button {
+    font-family: 'Montserrat', sans-serif; /* Aplicando a nova fonte aos parágrafos e campos */
+    color: #000000; /* Cor consistente para texto */
+}
+
+/* Exemplo de estilo para o botão ENVIAR, se você não tiver um .btn padronizado */
+.formulario button[type="submit"] {
+    background-color: #9f6920; /* Cor consistente para botões de ação */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #7b5318; /* Cor de hover consistente */
+}

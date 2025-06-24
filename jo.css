@@ -1,0 +1,498 @@
+ * {
+margin: 0; 
+padding: 0; 
+box-sizing: border-box;
+}
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #ded6c8;
+}
+
+header{
+background-color: #ded6c8; 
+padding: 20px 0; 
+border-bottom: 1px solid #000000;
+}
+
+.sal{ 
+     width: 90%;
+     max-width: 1200px;
+margin: auto; 
+display: flex; 
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+font-size: 24px; 
+color: #000000;
+}
+
+nav ul{
+list-style: none; 
+display: flex;
+gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+color: #000000;
+font-weight: bold; 
+}
+
+.im{
+background-color: #000000; 
+text-align: center;
+}
+
+.imgj{
+max-width: 400px; 
+display: block; 
+margin: auto;
+}
+
+.est{
+text-align: center;
+padding: 40px 20px; 
+background-color: #ded6c8;
+}
+
+.est h2{ 
+font-size: 36px; 
+margin-bottom: 20px;
+}
+
+.bot{
+display: inline-block; 
+padding: 12px 24px;
+background-color: #bd9965; 
+color: #000000;
+text-decoration: none;
+font-weight: bold; 
+border-radius: 5px;
+}
+
+.bot:hover{
+background-color: #9f6920;
+}
+
+.icones{ 
+background-color: #000000;
+display: flex;
+justify-content: center;
+padding: 40px 0; 
+gap: 60px;
+align-items: center;
+}
+
+.icones{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 60px;
+padding: 40px 0;
+}
+
+.icones img{
+    width: 100px;
+    height: auto;
+}
+
+
+footer{
+    color: #030003;
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+
+@media (max-width: 495px) {
+  .sal {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; 
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .imgj {
+    max-width: 90%; 
+  }
+
+  .est h2 {
+    font-size: 28px; 
+  }
+
+  .icones {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .icones img {
+    width: 60px; 
+  }
+
+  footer {
+    padding: 20px; 
+    margin-top: 20px; 
+  }
+}
+
+/* Para telas com altura máxima de 867px */
+@media (max-height: 867px) {
+  .est {
+    padding: 20px 10px; /* Reduz o padding da seção "est" para telas mais curtas */
+  }
+}
+
+/* Para telas com largura máxima de 495px E altura máxima de 867px */
+@media (max-width: 495px) and (max-height: 867px) {
+  /* Você pode adicionar estilos específicos aqui que se aplicam APENAS quando ambas as condições são verdadeiras */
+  .bot {
+    padding: 10px 20px; /* Ajusta o padding do botão para telas menores e mais curtas */
+    font-size: 14px;
+  }
+}
+
+/* Importação de fontes do Google Fonts (se você incluiu no HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Gerais do Corpo --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f3ed; /* Fundo claro e suave */
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Usado para centralizar o conteúdo da página */
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+}
+
+/* --- Header Principal (Consistente com galeria.css e sobre.css) --- */
+.main-header {
+    background-color: #ded6c8;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Impede que o header encolha */
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #5d4a3e;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5d4a3e;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transição para a linha também */
+}
+
+.main-nav a:hover {
+    color: #9f6920;
+    border-bottom: 2px solid #9f6920; /* A linha de hover */
+}
+
+/* --- Conteúdo Principal da Home (Apenas Texto) --- */
+.home-main-content {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    padding: 40px 20px; /* Padding para telas menores */
+}
+
+.hero-text-only {
+    max-width: 800px; /* Largura máxima para o bloco de texto */
+    padding: 30px;
+    background-color: #fff; /* Fundo branco para o bloco de texto */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8em; /* Título bem grande e impactante */
+    color: #5d4a3e;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.4em; /* Subtítulo um pouco maior */
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* --- Botão (Consistente com outras páginas) --- */
+.btn {
+    display: inline-block;
+    background-color: #9f6920;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em; /* Botão ligeiramente maior */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7b5318;
+    transform: translateY(-3px);
+}
+
+/* --- Rodapé (Consistente com galeria.css e sobre.css) --- */
+.main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
+    font-size: 0.9em;
+    flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920;
+}
+
+.main-footer .social-links a i {
+    margin-right: 5px;
+}
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-title {
+        font-size: 2.8em; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .hero-subtitle {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9em;
+    }
+
+    .hero-text-only {
+        padding: 20px;
+    }
+}
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Gerais do Corpo (Aplica as fontes) --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f3ed; /* Fundo consistente */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Header Principal (CONSISTENTE COM AS OUTRAS PÁGINAS) --- */
+.main-header {
+    background-color: #ded6c8;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif; /* Fonte consistente */
+    font-size: 2em;
+    color: #5d4a3e; /* Cor consistente */
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5d4a3e; /* Cor consistente */
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transição para a linha */
+}
+
+.main-nav a:hover {
+    color: #9f6920; /* Cor de hover consistente */
+    border-bottom: 2px solid #9f6920; /* A linha de hover consistente */
+}
+
+/* --- Rodapé (CONSISTENTE COM AS OUTRAS PÁGINAS) --- */
+.main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
+    font-size: 0.9em;
+}
+
+.main-footer .social-links {
+    margin-top: 10px; /* Espaço entre o texto de copyright e os links sociais */
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920; /* Cor de hover consistente */
+}
+
+.main-footer .social-links a i { /* Estilo para os ícones sociais */
+    margin-right: 5px;
+}
+
+/* --- Responsividade BÁSICA para Header e Footer (CONSISTENTE) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        font-size: 1.8em;
+    }
+}
+
+
+/* SEUS ESTILOS ORIGINAIS PARA AS SEÇÕES ABAIXO DEVEM SER MANTIDOS AQUI */
+/*
+.im { ... }
+.imgj { ... }
+.est { ... }
+.est h2 { ... }
+.bot { ... }
+.icones { ... }
+.icones img { ... }
+*/
+
+/* Exemplo de como você manteria o estilo de 'h2' da seção 'est' */
+.est h2 {
+    /* Mantenha as propriedades de fonte, cor, etc. que você já tinha aqui */
+    font-family: 'Playfair Display', serif; /* Aplicando a nova fonte */
+    color: #5d4a3e; /* Exemplo de cor consistente */
+    font-size: 2.5em; /* Exemplo de tamanho */
+    text-align: center;
+    margin-top: 30px;
+    /* Outros estilos que você já tinha */
+}
+
+/* Exemplo de como você manteria o estilo do botão '.bot' */
+.bot {
+    /* Mantenha as propriedades de fundo, cor, padding, etc. que você já tinha aqui */
+    display: inline-block; /* Para o padding e margens funcionarem */
+    background-color: #9f6920; /* Exemplo de cor consistente */
+    color: #fff; /* Exemplo de cor consistente */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Outros estilos que você já tinha */
+}
+
+.bot:hover {
+    background-color: #7b5318; /* Exemplo de hover consistente */
+}

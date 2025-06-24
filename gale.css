@@ -1,0 +1,220 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f3ed;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.im{
+background-color: #000000; 
+text-align: center;
+}
+.main-header {
+  background-color: #ded6c8;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #5d4a3e;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #5d4a3e;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.before-column,
+.after-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+.before-column .item,
+.after-column .item {
+  flex: 1; /* faz com que os itens se expandam igualmente */
+}
+
+
+
+
+.item {
+  background-color: #ded6c8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  min-height: 300px; /* ajuste conforme necessário */
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+
+.texto h2 {
+  font-size: 1.3em;
+  color: #9f6920;
+  margin-bottom: 5px;
+}
+
+.texto p {
+  font-size: 1.9em;
+  color: #000000;
+}
+
+.paragrafo-final {
+  font-size: 1.1em;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #e0deda;
+  border-left: 5px solid #9f6920;
+}
+
+.philosophy-section {
+  background-color: #e0deda;
+  padding: 60px 30px;
+  text-align: center;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.philosophy-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #5d4a3e;
+  margin-bottom: 25px;
+}
+
+.philosophy-text {
+  font-size: 1.15em;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+@media (max-width: 412px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .imgj{
+    width: 100%;
+}
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.6em;
+  }
+
+  .main-nav a {
+    font-size: 0.95em;
+  }
+
+  .before-after-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .before-column,
+  .after-column {
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .item {
+    width: 100%;
+    padding: 10px;
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+  }
+
+  .texto h2 {
+    font-size: 1.1em;
+  }
+
+  .texto p {
+    font-size: 1em;
+  }
+
+  .paragrafo-final {
+    padding: 15px;
+    margin: 30px 10px;
+    font-size: 1em;
+  }
+
+  .philosophy-title {
+    font-size: 1.7em;
+  }
+
+  .philosophy-text {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}
+
+

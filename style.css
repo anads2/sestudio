@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #ded6c8;
+  color: black;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero-img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.header-content h1 {
+  font-size: 2.2em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.benefits {
+  background: #f6f6f6;
+  padding: 20px;
+  text-align: center;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+   justify-content: center;
+  gap: 30px;
+}
+
+.change {
+  padding: 60px 20px;
+  background: #fff
+}
+
+.change .container {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+}
+
+.section-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.services {
+  background: #F1DEA8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.service {
+  max-width: 250px;
+}
+
+.testimonials {
+  background-color: #ded6c8;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+* {
+margin: 0; 
+padding: 0; 
+box-sizing: border-box;
+}
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #ded6c8;
+}
+
+header{
+background-color: #ded6c8; 
+padding: 20px 0; 
+border-bottom: 1px solid #000000;
+}
+
+.sal{ 
+     width: 90%;
+     max-width: 1200px;
+margin: auto; 
+display: flex; 
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+font-size: 24px; 
+color: #000000;
+}
+
+nav ul{
+list-style: none; 
+display: flex;
+gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+color: #000000;
+font-weight: bold; 
+}
+
+.im{
+background-color: #000000; 
+text-align: center;
+}
+
+.imgj{
+max-width: 400px; 
+display: block; 
+margin: auto;
+}
+
+p{
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Gerais do Corpo --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f3ed; /* Fundo claro e suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Container genérico para limitar largura --- */
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Título de Seção Padrão --- */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #5d4a3e;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #9f6920;
+    margin: 15px auto 0;
+}
+
+
+/* --- Header Principal (Consistente) --- */
+.main-header {
+    background-color: #ded6c8;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #5d4a3e;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5d4a3e;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #9f6920;
+    border-bottom: 2px solid #9f6920;
+}
+
+/* --- Botões Padrão --- */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #9f6920;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #7b5318;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+    background-color: #ded6c8;
+    color: #5d4a3e;
+    border: 2px solid #5d4a3e;
+}
+
+.secondary-btn:hover {
+    background-color: #5d4a3e;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: #e0deda; /* Fundo suave para a seção hero */
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden; /* Para garantir que as imagens não vazem */
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px; /* Espaçamento entre texto e imagem */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+}
+
+.hero-text-content {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima para não ficar muito pequeno */
+    text-align: left;
+}
+
+.hero-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    color: #5d4a3e;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-main-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+    .main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
+    font-size: 0.9em;
+}
+
+.main-footer .social-links {
+    margin-top: 10px; /* Espaço entre o texto de copyright e os links sociais */
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920; /* Cor de hover consistente */
+}
+
+.main-footer .social-links a i { /* Estilo para os ícones sociais */
+    margin-right: 5px;
+}
+
+/* --- Responsividade BÁSICA para Header e Footer (CONSISTENTE) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        font-size: 1.8em;
+    }
+}

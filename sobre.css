@@ -1,0 +1,528 @@
+* {
+margin: 0; 
+padding: 0; 
+box-sizing: border-box;
+}
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #ded6c8;
+}
+
+header{
+background-color: #ded6c8; 
+padding: 20px 0; 
+border-bottom: 1px solid #000000;
+}
+
+.sal{ 
+     width: 90%;
+     max-width: 1200px;
+margin: auto; 
+display: flex; 
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+font-size: 24px; 
+color: #000000;
+}
+
+nav ul{
+list-style: none; 
+display: flex;
+gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+color: #000000;
+font-weight: bold; 
+}
+
+.im{
+background-color: #000000; 
+text-align: center;
+}
+
+.imgj{
+max-width: 400px; 
+display: block; 
+margin: auto;
+}
+
+.sabris {
+  flex-wrap: wrap;
+  padding: 30px;
+  color: #000;
+  text-align: center;
+}
+
+
+.sasa {
+  padding: 20px;
+  max-width: 50%;
+  font-size: 45px;
+  color: #9f6920;
+}
+
+.direita {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  color: black;
+}
+
+.servico {
+  background: #bd9965;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #bd9965;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+a{
+  color: #000000;
+}
+
+.btn:hover {
+  background-color: #9f6920;
+}
+
+.sobre-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sobre-container img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+im{
+background-color: #6b6060; 
+text-align: center;
+}
+
+.imgj{
+max-width: 400px; 
+display: block; 
+margin: auto;
+}
+
+@media (max-width: 768px) {
+  .sal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .sasa,
+  .direita {
+    max-width: 90%; /* Aumenta a largura em telas menores para melhor leitura */
+    font-size: 35px; /* Ajusta o tamanho da fonte */
+  }
+
+  .sobre-container {
+    flex-direction: column; /* Empilha os itens verticalmente em telas menores */
+    align-items: center; /* Centraliza os itens empilhados */
+  }
+
+  .sobre-container img {
+    /* Já está responsivo com as propriedades acima, mas garantimos que a largura se ajuste */
+    width: 90%; /* Exemplo: Ocupa 90% da largura do contêiner em telas menores */
+    max-width: 495px; /* Mantém o max-width */
+  }
+
+  .info {
+    width: 90%; /* Ocupa 90% da largura em telas menores */
+    max-width: 495px; /* Mantém o max-width */
+  }
+}
+
+@media (max-width: 480px) {
+  .sasa {
+    font-size: 28px;
+  }
+
+  .servico {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+  }
+}
+
+/* Importação de fontes do Google Fonts (se você incluiu no HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Gerais do Corpo --- */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando a nova fonte */
+    background-color: #f7f3ed; /* Cor de fundo mais clara e suave */
+    color: #333; /* Cor de texto padrão */
+    line-height: 1.6;
+}
+
+/* --- Header Principal (Consistente com galeria.css) --- */
+.main-header {
+    background-color: #ded6c8;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #5d4a3e;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5d4a3e;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #9f6920;
+    border-bottom: 2px solid #9f6920;
+}
+
+/* --- Seção Hero "Sobre" --- */
+.hero-section-sobre {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura do banner */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+
+.hero-image-sobre {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Escurece a imagem para o texto se destacar */
+}
+
+.hero-overlay-sobre {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-overlay-sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay-sobre p {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Conteúdo Principal "Sobre" --- */
+.about-main-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* --- Seção de Introdução da Sabrina --- */
+.sabrina-intro-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.sabrina-details-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Para empilhar imagem e texto em telas pequenas */
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.sabrina-portrait {
+    width: 200px; /* Tamanho da imagem da Sabrina */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Imagem redonda */
+    border: 5px solid #9f6920; /* Borda destacada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sabrina-text-content {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+}
+
+.sabrina-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #5d4a3e;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.sabrina-title {
+    font-size: 1.2em;
+    color: #9f6920;
+    font-weight: 600;
+}
+
+/* --- Seções de História/Tópicos --- */
+.story-sections {
+    display: grid;
+    /* Grid com 3 colunas em telas maiores, mínimo 300px, máximo 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* Mais espaço entre os cards */
+    margin-bottom: 60px;
+}
+
+.story-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-icon {
+    font-size: 3.5em; /* Tamanho dos ícones */
+    color: #9f6920;
+    margin-bottom: 20px;
+    display: block; /* Para centralizar o ícone */
+}
+
+.story-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #5d4a3e;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.story-description {
+    font-size: 1.05em;
+    color: #4a4a4a;
+    line-height: 1.7;
+}
+
+.story-description strong {
+    color: #9f6920;
+    font-weight: 600;
+}
+
+/* --- Seção de Chamada para Ação (CTA) --- */
+.cta-section {
+    background-color: #ded6c8;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #5d4a3e;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-size: 1.1em;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #9f6920;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px; /* Botão mais arredondado */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #7b5318; /* Tom mais escuro no hover */
+    transform: translateY(-3px); /* Leve efeito de elevação */
+}
+
+/* --- Rodapé (Consistente com galeria.css) --- */
+.main-footer {
+    background-color: #5d4a3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #9f6920;
+}
+
+.main-footer .social-links a i { /* Estilo para os ícones sociais */
+    margin-right: 5px;
+}
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-overlay-sobre h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-overlay-sobre p {
+        font-size: 0.9em;
+    }
+
+    .sabrina-details-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sabrina-portrait {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sabrina-name {
+        font-size: 2.2em;
+    }
+
+    .story-sections {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .story-item {
+        padding: 25px;
+    }
+
+    .story-icon {
+        font-size: 3em;
+    }
+
+    .story-title {
+        font-size: 1.6em;
+    }
+
+    .cta-title {
+        font-size: 2em;
+    }
+
+    .cta-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .hero-section-sobre {
+        height: 300px;
+    }
+
+    .hero-overlay-sobre h2 {
+        font-size: 1.8em;
+    }
+}
